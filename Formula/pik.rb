@@ -9,9 +9,10 @@ class Pik < Formula
   depends_on :macos
 
   def install
-    # The tarball contains `pik.app/`. Keep it as a proper .app bundle under
-    # the formula's prefix so macOS code signing stays intact.
-    prefix.install "pik.app"
+    # Tarball has `pik.app/` as the single top-level directory, so Homebrew
+    # auto-strips it on extraction — cwd is already inside the bundle.
+    # Reconstruct it at the install destination to keep codesign intact.
+    (prefix/"pik.app").install Dir["*"]
 
     # Expose a `pik` CLI that exec's the Mach-O inside the installed bundle.
     # Using opt_prefix keeps the symlink stable across version bumps.
