@@ -3,7 +3,7 @@ class Pik < Formula
   homepage "https://github.com/t4traw/pik"
   version "0.1.0"
   url "https://github.com/t4traw/pik/releases/download/v#{version}/pik-v#{version}-darwin-universal.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "d0baa6cebc19c8c92588d5f5bdbbc8a86046c559ec2640f3ab2c4179981c2267"
   license "MIT"
 
   depends_on :macos
