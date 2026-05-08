@@ -1,9 +1,9 @@
 class Pik < Formula
   desc "Lightweight Git GUI with line-level staging"
   homepage "https://github.com/t4traw/pik"
-  version "0.1.5"
+  version "0.1.6"
   url "https://github.com/t4traw/pik/releases/download/v#{version}/pik-v#{version}-darwin-universal.tar.gz"
-  sha256 "bb4540df5709214d2d62e27b96b3ffbc3fae395963eb462a7180477b4c028d40"
+  sha256 "ed1692eea2b5281373d3d2d28d9483d6ea8178305d6dba11f1db25a18ee82a76"
   license "MIT"
 
   depends_on :macos
